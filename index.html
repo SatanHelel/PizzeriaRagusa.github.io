@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzeria Ragusa</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -14,54 +15,44 @@
         </div>
         <nav>
             <a href="#menu">Speisekarte</a>
-            <a href="#order">Bestellen</a>
+            <a href="#about">Über uns</a>
             <a href="#contact">Kontakt</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h2>Willkommen bei Pizzeria Ragusa!</h2>
-        <p>Frische, handgemachte Pizzen direkt zu dir.</p>
-        <a href="#order" class="btn">Jetzt bestellen</a>
+        <h2>Frische, handgemachte italienische Pizzen</h2>
+        <p>Willkommen bei Pizzeria Ragusa – Geschmack, Leidenschaft, Tradition</p>
+        <a href="#menu" class="btn">Unsere Speisekarte</a>
+    </section>
+
+    <!-- Über uns -->
+    <section id="about">
+        <h2>Über Pizzeria Ragusa</h2>
+        <p>Seit 1995 bringen wir authentische italienische Küche direkt zu Ihnen. Unsere Pizzen werden mit Liebe, frischen Zutaten und traditionellen Rezepten gebacken.</p>
     </section>
 
     <!-- Speisekarte -->
     <section id="menu">
-        <h2>Unsere Speisekarte</h2>
+        <h2>Unsere Pizzen</h2>
         <div class="menu-items">
             <div class="menu-item">
                 <img src="assets/images/pizza-margherita.jpg" alt="Pizza Margherita">
-                <h3>Pizza Margherita</h3>
+                <h3>Margherita</h3>
                 <p>Tomaten, Mozzarella, Basilikum – 8€</p>
             </div>
             <div class="menu-item">
                 <img src="assets/images/pizza-pepperoni.jpg" alt="Pizza Pepperoni">
-                <h3>Pizza Pepperoni</h3>
+                <h3>Pepperoni</h3>
                 <p>Pepperoni, Mozzarella, Tomatensauce – 10€</p>
             </div>
-            <!-- weitere Gerichte hier -->
+            <div class="menu-item">
+                <img src="assets/images/pizza-vegetariana.jpg" alt="Pizza Vegetariana">
+                <h3>Vegetariana</h3>
+                <p>Gemüse, Mozzarella, Tomatensauce – 9€</p>
+            </div>
         </div>
-    </section>
-
-    <!-- Bestellformular -->
-    <section id="order">
-        <h2>Online bestellen</h2>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="order">Bestellung:</label>
-            <textarea id="order" name="order" placeholder="Ihre Bestellung hier..." required></textarea>
-
-            <label for="notes">Anmerkungen:</label>
-            <textarea id="notes" name="notes" placeholder="z. B. Allergien oder Extra-Käse"></textarea>
-
-            <button type="submit">Bestellung abschicken</button>
-        </form>
     </section>
 
     <!-- Kontakt -->
@@ -79,3 +70,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
