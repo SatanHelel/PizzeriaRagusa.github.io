@@ -1,11 +1,81 @@
-<header>
-  <h1>Pizzeria Ragusa</h1>
-  <nav>
-      <a href="#menu">Speisekarte</a>
-      <a href="#order">Bestellen</a>
-      <a href="#contact">Kontakt</a>
-  </nav>
-</header>
-<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-<input type="text" name="name" required>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Ragusa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Pizzeria Ragusa</h1>
+        </div>
+        <nav>
+            <a href="#menu">Speisekarte</a>
+            <a href="#order">Bestellen</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Willkommen bei Pizzeria Ragusa!</h2>
+        <p>Frische, handgemachte Pizzen direkt zu dir.</p>
+        <a href="#order" class="btn">Jetzt bestellen</a>
+    </section>
+
+    <!-- Speisekarte -->
+    <section id="menu">
+        <h2>Unsere Speisekarte</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="assets/images/pizza-margherita.jpg" alt="Pizza Margherita">
+                <h3>Pizza Margherita</h3>
+                <p>Tomaten, Mozzarella, Basilikum – 8€</p>
+            </div>
+            <div class="menu-item">
+                <img src="assets/images/pizza-pepperoni.jpg" alt="Pizza Pepperoni">
+                <h3>Pizza Pepperoni</h3>
+                <p>Pepperoni, Mozzarella, Tomatensauce – 10€</p>
+            </div>
+            <!-- weitere Gerichte hier -->
+        </div>
+    </section>
+
+    <!-- Bestellformular -->
+    <section id="order">
+        <h2>Online bestellen</h2>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="order">Bestellung:</label>
+            <textarea id="order" name="order" placeholder="Ihre Bestellung hier..." required></textarea>
+
+            <label for="notes">Anmerkungen:</label>
+            <textarea id="notes" name="notes" placeholder="z. B. Allergien oder Extra-Käse"></textarea>
+
+            <button type="submit">Bestellung abschicken</button>
+        </form>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="contact">
+        <h2>Kontakt & Adresse</h2>
+        <p>📍 Musterstraße 1, 12345 Stadt</p>
+        <p>📞 0123 456789</p>
+        <p>📧 info@pizzeriaragusa.de</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pizzeria Ragusa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,9 +1,125 @@
+/* Allgemeines Styling */
 body {
-    font-family: Arial, sans-serif;
-    background: #fdf6f0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #fff8f0;
     color: #333;
 }
-button {
-    background: #333;
+
+/* Header */
+header {
+    background: #d62828;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: url('assets/images/pizza-hero.jpg') no-repeat center/cover;
     color: #fff;
 }
+
+.hero .btn {
+    display: inline-block;
+    background: #fcbf49;
+    color: #333;
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #f77f00;
+    color: #fff;
+}
+
+/* Menü */
+#menu {
+    padding: 2rem;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu-item {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 200px;
+    background: #fff;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Formular */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background: #d62828;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #71100f;
+}
+
+/* Kontakt */
+#contact {
+    text-align: center;
+    padding: 2rem;
+    background: #fcbf49;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-ali

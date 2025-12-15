@@ -1,0 +1,10 @@
+pizzeria-ragusa/
+│
+├── index.html
+├── style.css
+├── script.js
+└── assets/
+    └── images/
+        ├── pizza-hero.jpg       ← Hero-Bild (großes Header-Bild)
+        ├── pizza-margherita.jpg  ← Speisebild
+        └── pizza-pepperoni.jpg   ← Speisebild
